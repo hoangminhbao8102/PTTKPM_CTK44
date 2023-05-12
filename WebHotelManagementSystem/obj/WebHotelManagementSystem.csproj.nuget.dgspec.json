@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\HeThongQuanLyKhachSan\\WebHotelManagementSystem\\WebHotelManagementSystem.csproj": {}
+    "E:\\HeThongQuanLyKhachSan\\PTTKPM_CTK44\\WebHotelManagementSystem\\WebHotelManagementSystem.csproj": {}
   },
   "projects": {
-    "E:\\HeThongQuanLyKhachSan\\WebHotelManagementSystem\\WebHotelManagementSystem.csproj": {
+    "E:\\HeThongQuanLyKhachSan\\PTTKPM_CTK44\\WebHotelManagementSystem\\WebHotelManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\HeThongQuanLyKhachSan\\WebHotelManagementSystem\\WebHotelManagementSystem.csproj",
+        "projectUniqueName": "E:\\HeThongQuanLyKhachSan\\PTTKPM_CTK44\\WebHotelManagementSystem\\WebHotelManagementSystem.csproj",
         "projectName": "WebHotelManagementSystem",
-        "projectPath": "E:\\HeThongQuanLyKhachSan\\WebHotelManagementSystem\\WebHotelManagementSystem.csproj",
+        "projectPath": "E:\\HeThongQuanLyKhachSan\\PTTKPM_CTK44\\WebHotelManagementSystem\\WebHotelManagementSystem.csproj",
         "packagesPath": "C:\\Users\\Maxsys\\.nuget\\packages\\",
-        "outputPath": "E:\\HeThongQuanLyKhachSan\\WebHotelManagementSystem\\obj\\",
+        "outputPath": "E:\\HeThongQuanLyKhachSan\\PTTKPM_CTK44\\WebHotelManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

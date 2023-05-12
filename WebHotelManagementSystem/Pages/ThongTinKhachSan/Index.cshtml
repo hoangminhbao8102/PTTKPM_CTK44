@@ -1,0 +1,35 @@
+﻿@page
+@model WebHotelManagementSystem.Pages.ThongTinKhachSan.IndexModel
+@{
+}
+
+<br />
+<h2>Danh sách thông tin khách sạn</h2>
+<a class="btn btn-primary btn-sm" href="/ThongTinKhachSan/ThemMoi">Thêm khách sạn mới</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên khách sạn</th>
+            <th>Loại</th>
+            <th>Địa chỉ</th>
+            <th>Số điện thoại</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.dsThongTinKhachSan)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.name</td>
+                <td>@item.type</td>
+                <td>@item.address</td>
+                <td>@item.phone</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/ThongTinKhachSan/ChinhSua?id=@item.id">Chỉnh sửa</a>
+                    <a class="btn btn-primary btn-sm" href="/ThongTinKhachSan/Xoa?id=@item.id">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

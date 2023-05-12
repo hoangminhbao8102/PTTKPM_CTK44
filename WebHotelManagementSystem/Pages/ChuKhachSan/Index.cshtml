@@ -1,0 +1,38 @@
+﻿@page
+@model WebHotelManagementSystem.Pages.ChuKhachSan.IndexModel
+@{
+}
+
+<br />
+<h2>Danh sách chủ khách sạn</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Họ và tên</th>
+            <th>Giới tính</th>
+            <th>Số CMND/CCCD</th>
+            <th>Địa chỉ</th>
+            <th>Số điện thoại</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.dsChuKhachSan)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.name</td>
+                <td>@item.gender</td>
+                <td>@item.idCard</td>
+                <td>@item.address</td>
+                <td>@item.phone</td>
+                <td>@item.email</td>
+                <td>@item.username</td>
+                <td>@item.password</td>
+            </tr>
+        }
+    </tbody>
+</table>
